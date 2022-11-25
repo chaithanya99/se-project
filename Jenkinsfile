@@ -6,16 +6,19 @@ pipeline {
                 git 'https://github.com/chaithanya99/se-project.git'
             }
         }
-        stage('Build Code') {
+        stage('Build Code1') {
             steps {
-                sh "chmod u+x add.py"
-                sh "./add.py"
+                echo "working fine"
+            }
+        }
+        stage('Build Code2') {
+            steps {
+                sh "/usr/bin/python3 add.py"
             }
         }
      stage('Test Code') {
             steps {
-                sh "chmod u+x Test.py"
-                sh "./Test.py"
+                sh "/usr/bin/python3 Test.py"
             }
         }
     } 
