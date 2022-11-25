@@ -12,7 +12,7 @@ class TestSum(unittest.TestCase):
         result = addition(5,10)
         self.assertEqual(result, 15)
     def test_3(self):
-        result = addition(10,35)
+        result = addition(30,35)
         self.assertEqual(result, 45)
     def test_4(self):
         result = addition(200,300)
